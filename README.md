@@ -10,4 +10,4 @@ pinned: false
 license: mit
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+Check out this app live at https://kmaurinjones-randomcaser-app-p66z8z.streamlit.app/.  If you have any feedback or suggestions for additions to the app, feel free to email me at kmaurinjones@gmail.com
