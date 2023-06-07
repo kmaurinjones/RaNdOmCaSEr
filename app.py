@@ -16,7 +16,7 @@ def random_case(text):
 st.title(random_case('randomcaser'))
 
 # Text input box
-user_input = st.text_input("Enter your text here:")
+user_input = st.text_input(random_case("Enter your text here:"))
 
 if user_input:
     # Apply random casing to the input string
