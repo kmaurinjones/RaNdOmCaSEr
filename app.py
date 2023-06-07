@@ -15,9 +15,6 @@ def random_case(text):
 
 st.title(random_case("RaNdOmCaSEr"))
 
-# Streamlit code
-st.title('Random Case Converter')
-
 # Text input box
 user_input = st.text_input("Enter your text here:")
 
