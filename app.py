@@ -1,26 +1,30 @@
-
+# import necessary libraries
 import streamlit as st
 import random
 
-def randomize_casing(text):
-    result = ''
-    for char in text:
-        if random.randint(0, 1):
-            result += char.upper()
+def random_case(text):
+    # Convert string to list to use list methods
+    text = list(text)
+    for i in range(len(text)):
+        # Randomly decide if the character should be uppercase or lowercase
+        if random.choice([True, False]):
+            text[i] = text[i].upper()
         else:
-            result += char.lower()
-    return result
+            text[i] = text[i].lower()
+    return "".join(text)
 
-st.title(randomize_casing("RaNdOmCaSEr"))
+# Streamlit code
+st.title(random_case('randomcaser'))
 
-# Informative text that doesn't change upon refresh
-st.write(randomize_casing("Enter any text below to have its casing randomized:"))
+# Text input box
+user_input = st.text_input(random_case("Enter your text here:"))
 
-# Consistent prompt text for text area
-user_input = st.text_area("Enter text:", height = 200)
+if user_input:
+    # Apply random casing to the input string
+    result = random_case(user_input)
 
-button_text = randomize_casing("rAndOMiZe cAsiNg")
-if st.button(button_text):
-    randomized_text = randomize_casing(user_input)
-    # st.write(f"Randomized Text: {randomized_text}")
-    st.text_area(randomized_text, height = 200)
+    # Display the result
+    # st.text(random_case("Your text with random casing:"))
+    st.write(result)
+
+st.write(random_case("If you like this app, consider leaving a ⭐ on the GitHub repo. If you have any feedback or would like any additions to be made to the app, feel free to email me at kmaurinjones@gmail.com."))
