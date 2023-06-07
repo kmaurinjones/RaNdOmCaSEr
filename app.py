@@ -13,6 +13,8 @@ def random_case(text):
             text[i] = text[i].lower()
     return "".join(text)
 
+st.title(random_case("RaNdOmCaSEr"))
+
 # Streamlit code
 st.title('Random Case Converter')
 
@@ -24,5 +26,5 @@ if user_input:
     result = random_case(user_input)
 
     # Display the result
-    st.text("Your text with random casing:")
+    # st.text("Your text with random casing:")
     st.write(result)
