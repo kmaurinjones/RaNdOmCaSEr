@@ -27,4 +27,5 @@ if user_input:
     # st.text(random_case("Your text with random casing:"))
     st.write(result)
 
-st.write(random_case("If you like this app, consider leaving a ⭐ on the GitHub repo. If you have any feedback or would like any additions to be made to the app, feel free to email me at kmaurinjones@gmail.com."))
+    st.write("\n")
+    st.write(random_case("If you like this app, consider leaving a ⭐ on the GitHub repo. If you have any feedback or would like any additions to be made to the app, feel free to email me at kmaurinjones@gmail.com."))
