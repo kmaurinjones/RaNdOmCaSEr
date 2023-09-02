@@ -62,6 +62,6 @@ user_input = st.text_input("Enter your text here:")
 if user_input:
     # Apply random casing to the input string
     result = random_case(user_input)
+    st.markdown("Copy to clipboard using the button in the field below.")
     # Display the result as code, so it gets a "copy" button
     st.code(result, language = "text")
-    # st.markdown("Now you get the option to copy")
