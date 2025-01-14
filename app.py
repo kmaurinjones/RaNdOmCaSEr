@@ -26,6 +26,6 @@ if user_input:
     if st.button("Re-randomize"):
         result = random_case(user_input)
     
-    st.markdown(random_case("Copy to clipboard using the button in the field below."))
+    st.markdown("Copy to clipboard using the button in the field below.")
     # Display the result as code, so it gets a "copy" button
     st.code(result, language="text")
