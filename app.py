@@ -23,7 +23,7 @@ if user_input:
     result = random_case(user_input)
     
     # Button to re-randomize the text
-    if st.button(random_case("Re-randomize")):
+    if st.button("Re-randomize"):
         result = random_case(user_input)
     
     st.markdown(random_case("Copy to clipboard using the button in the field below."))
