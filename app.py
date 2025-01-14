@@ -16,16 +16,16 @@ def random_case(text):
 st.title(random_case('RandomCaser'))
 
 # Text input box for randomcaser
-user_input = st.text_input("Enter your text here:")
+user_input = st.text_input(random_case("Enter your text here:"))
 
 if user_input:
     # Initial random casing of the input string
     result = random_case(user_input)
     
     # Button to re-randomize the text
-    if st.button("Re-randomize"):
+    if st.button(random_case("Re-randomize")):
         result = random_case(user_input)
     
-    st.markdown("Copy to clipboard using the button in the field below.")
+    st.markdown(random_case("Copy to clipboard using the button in the field below."))
     # Display the result as code, so it gets a "copy" button
     st.code(result, language="text")
